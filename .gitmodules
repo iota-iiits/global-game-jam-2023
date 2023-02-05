@@ -1,3 +1,6 @@
 [submodule "root-ninja"]
 	path = root-ninja
 	url = https://github.com/ping0ms/root-ninja
+[submodule "QueueingDelay_RootRundown/GGJRice2D"]
+	path = QueueingDelay_RootRundown/GGJRice2D
+	url = https://github.com/BlackGoku36/GGJRice2D.git
