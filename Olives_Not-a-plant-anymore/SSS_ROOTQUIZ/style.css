@@ -1,0 +1,325 @@
+.level{
+    margin-top: 15%;
+    color: #cec043;
+}
+
+* {
+    margin: 0;
+}
+
+#container {
+    height: 600px;
+    width: 600px;
+    background-color: #1e4f8e;
+    margin: 50px 220px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px #009de4;
+    -moz-box-shadow: 0px 4px 0px 0px #009de4;
+    -webkit-box-shadow: 0px 4px 0px 0px #009de4;
+    position: relative;
+}
+
+#timeremainingvalue{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#sricity {
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+#iota {
+    margin-top: 80px;
+}
+#popup {
+    color: #090c5d;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 100px;
+}
+
+#score {
+    background-color: #d6e984;
+    color: #0f0f0e;
+    font-size: 25px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    left: 170px;
+    box-shadow: 0px 4px 0px #181a0e;
+    -moz-box-shadow: 0px 4px 0px #181a0e;
+    -webkit-box-shadow: 0px 4px 0px #181a0e;
+}
+
+#correct {
+    position: absolute;
+    left: 260px;
+    background-color: #169023;
+    color: white;
+    padding: 11px;
+    display: none;
+    margin-top: -15px;
+}
+
+#wrong {
+    position: absolute;
+    left: 250px;
+    background-color: #ab2d0e;
+    color: white;
+    padding: 11px;
+    display: none;
+    margin-top: -15px;
+}
+
+#reset{
+    background-color:rgb(90, 119, 15);
+    margin-left:500px;
+    color: #f0ec99;
+    padding:20px 50px 20px 50px;
+    border:rgb(90, 119, 15);
+}
+
+#reset:hover {
+    background-color:rgb(121, 183, 90);
+    font-weight: bold;
+    color: #140e63;
+}
+
+#question {
+    width: 450px;
+    height: 150px;
+    margin: 0px auto 30px auto;
+    background-color: #090c5d;
+    box-shadow: 0px 4px #090c5d;
+    -moz-box-shadow: 0px 4px #090c5d;
+    -webkit-box-shadow: 0px 4px #090c5d;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    color: #be6e1e;
+}
+
+#choices {
+    width: 450px;
+    height: 100px;
+    margin: 5px auto;
+}
+
+.box {
+    width: 85px;
+    height: 85px;
+    background-color: #b2aa0a;
+    float: left;
+    margin-right: 36px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+#page1 {
+    margin-top: 4vh;
+}
+
+.box:hover, #startreset:hover {
+    background-color: #f3f3aa;
+    color: rgb(16, 67, 154);
+    box-shadow: 0px 4px #dde397;
+    -moz-box-shadow: 0px 4px #dde397;
+    -webkit-box-shadow: 0px 4px #dde397;
+}
+
+.box:active, #startreset:active {
+    background-color: #bf9230;
+    color: white;
+    box-shadow: 0px 0px #bf9230; 
+    -moz-box-shadow: 0px 0px #bf9230; 
+    -webkit-box-shadow: 0px 0px #bf9230; 
+    top: 4px;
+}
+
+#box4 {
+    margin-right: 0;   
+}
+
+#footer {
+    float: right;
+    margin-right: 50px;
+    color: #090c5d;
+}
+
+#timeremaining {
+    width: 250px;
+    padding: 10px;
+    position: absolute;
+    top: 520px;
+    color: #140e63;
+    font-size: 100px;
+    left: 180px;
+    background-color: rgba(174, 166, 102, 0.8);
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    font-size: larger;
+    display: none;
+}
+
+#gameOver { 
+    height: 180px;
+    width: 450px;
+    background: linear-gradient(#e6ec39, #09445e);
+    background: -webkit-linear-gradient(#dce362, #143e5e);
+    background: -o-linear-gradient(#e8d724, #113b8f);
+    background: -moz-linear-gradient(#dfe927, #1c4a87);
+    color: rgb(37, 48, 5);
+    font-size: 2.5em;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 220px;
+    padding: 0px 0px 0px 70px;
+    left: 70px;
+    z-index: 2;
+    display: none;
+}
+
+
+body {
+    height: 100%;
+    background-color: #ece076;
+}
+
+.root {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+    color: #140e63;
+}
+
+.button {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.cta {
+    display: flex;
+    padding: 10px 45px;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    background: #140e63;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+}
+
+.cta:focus {
+    outline: none;
+}
+
+.cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #FBC638;
+}
+
+.cta span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.cta:hover span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+span {
+    transform: skewX(15deg)
+}
+
+span:nth-child(2) {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+}
+
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+
+    50% {
+        fill: #FBC638;
+    }
+
+    100% {
+        fill: white;
+    }
+}
+
+#treeimg-grey {
+    overflow: hidden;
+    margin-top:-700px;
+    height:600px;
+}
+
+#treeimg-color { 
+    z-index: -1;
+}
+
+.gray { 
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%); 
+    overflow: hidden;
+    height: 10%;
+}
